@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #panel,#flip{
+            padding:10px;
+            text-align:center;
+            background-color: red;
+            border:solid 1px yellow;
+        }
+        #panel{
+            display:none;
+            padding:50px;
+        }
+        #flip1{
+            padding:10px;
+            text-align:center;
+            background-color: red;
+            border:solid 1px yellow;
+
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            });
+            $("#flip1").click(function(){
+                $("#panel1").slideUp("slow")
+            })
+        });
+        $()
+    
+    </script>
+</head>
+<body>
+    <div id="flip">click ti slide down</div>
+    <div id="panel">Hello! i slid down</div>
+    <div id="flip1">click to slide Up</div>
+    <div id="panel1" style="padding:50px;background:lightblue;">
+    This will slide Up</div>
+   
+</body>
+</html>

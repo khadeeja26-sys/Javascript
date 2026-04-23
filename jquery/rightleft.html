@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+</head>
+<body>
+      <button>Animate</button>
+    <div style="background: blue;height:100px;width:100px;position:relative;"></div>
+    <script>
+        $("button").click(function(){
+            var div=$("div");
+            div.animate({width:'150px',backgroundColor:'red', top:'500px'});
+            div.animate({height:'150px',backgroundColor:'green',left:'500px'});
+            div.animate({width:'100px',backgroundColor:'yellow',top:'50px'});
+            div.animate({height:'150px',backgroundColor:'blue',left:'50px'});
+
+});
+       
+        
+    </script>
+  
+</body>
+</html>

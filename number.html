@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="demo"></p>
+    <p id="Demo"></p>
+</head>
+<body>
+    <script>
+        let numbers=[10,20,30,40,50];
+        let min=Math.min(...numbers);
+        let max=Math.max(...numbers);
+        let fl=Math.floor(4.7);
+        let ce=Math.ceil(4.2);
+        let ro=Math.round(4.5);
+        document.getElementById("demo").innerHTML=min;
+        document.getElementById("Demo").innerText="max:"+max+" floor:"+fl+" ceil:"+ce+" random:"+ro;
+        
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <button onclick="fun()">click</button>
+    <p id="demo"></p>
+    <script>
+        function fun()
+        {
+            var text;
+            var fruits=document.getElementById("myInput").value;
+            switch(fruits){
+                case "Banana" :text="Banana is good!";
+                break;
+                case "Orange" :text="Orange is Good";
+                break;
+                case "Apple" :text="Apple is awesome";
+                break;
+                default:text="I have never heard of that fruit..";
+            }
+            document.getElementById("demo").innerHTML=text;
+        }
+    </script>
+</body>
+</html>
